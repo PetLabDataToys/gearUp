@@ -9,6 +9,43 @@
 		<string>42</string>
 		<key>objects</key>
 		<dict>
+			<key>9efd483b5b02cc17923a3989cff76cb2</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxArcText.h</string>
+				<key>path</key>
+				<string>src/ofxArcText.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>5d86ff7e8fb5996d76ddb764b7d436b6</key>
+			<dict>
+				<key>fileRef</key>
+				<string>ab3e4bf383d66e775ee6e2dc79c808e9</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>ab3e4bf383d66e775ee6e2dc79c808e9</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxArcText.cpp</string>
+				<key>path</key>
+				<string>src/ofxArcText.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
 			<key>319cc33dee7280ca21e3193fa8b65e10</key>
 			<dict>
 				<key>explicitFileType</key>
@@ -605,6 +642,7 @@
 					<string>E4B69E210A3A1BDC003C02F2</string>
 					<string>e02212a66f4a97ca656ed83329c7640e</string>
 					<string>075d1d25e4c535c69eaadd04bd13cbaa</string>
+					<string>5d86ff7e8fb5996d76ddb764b7d436b6</string>
 				</array>
 				<key>isa</key>
 				<string>PBXSourcesBuildPhase</string>
@@ -916,6 +954,8 @@
 					<string>ee31ee93d8ef3e682e30be341b3a7a06</string>
 					<string>dd05112ca0ac8a6b5ec7797b1c164c07</string>
 					<string>319cc33dee7280ca21e3193fa8b65e10</string>
+					<string>ab3e4bf383d66e775ee6e2dc79c808e9</string>
+					<string>9efd483b5b02cc17923a3989cff76cb2</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
