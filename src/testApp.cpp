@@ -184,7 +184,7 @@ void testApp::update(){
                     speedFactor = 1.0;
                 }
             } else {
-                sTitle = "You do NOT got the job";
+                sTitle = "You do NOT get the job";
                 sSubTitle = "";
                 sAnswer = "";
                 speedFactor = 1.0;
@@ -248,10 +248,32 @@ void testApp::draw(){
     
     //  Potentialy New Gear
     //
-    if( bValid && !bPrintToPdf) {
+    if( (nLevel != 0) && bValid && !bPrintToPdf) {
         ofSetColor(255,0,0);
         picked->update();
         picked->draw();
+    }
+    
+    if ( nLevel == 0 ){
+        ofSetColor(255,50+abs(cos(ofGetElapsedTimef()))*200);
+        string text = "Begining";
+        ofRectangle boundingBox = fontSmall.getStringBoundingBox(text, 0, 0);
+        boundingBox.x = gears[0]->x + gears[0]->getRadius() + 50;
+        boundingBox.y = gears[0]->y ;
+        fontSmall.drawString(text, boundingBox.x, boundingBox.y);
+        
+        text = "End";
+        boundingBox = fontSmall.getStringBoundingBox(text, 0, 0);
+        boundingBox.x = you.x - boundingBox.width*0.5;
+        boundingBox.y = you.y + you.getRadius() + 60;
+        fontSmall.drawString(text, boundingBox.x, boundingBox.y);
+        
+        ofSetColor(255);
+        text = "Try to conect the Begining gear (the job) with the End one ( you )";
+        boundingBox = fontSmall.getStringBoundingBox(text, 0, 0);
+        boundingBox.x = ofGetWidth()*0.5 - boundingBox.width*0.5;
+        boundingBox.y = ofGetHeight()*0.25 - boundingBox.height*0.5;
+        fontSmall.drawString(text, boundingBox.x, boundingBox.y);
     }
     
     //  Draw Gears

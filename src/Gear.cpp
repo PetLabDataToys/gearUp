@@ -38,7 +38,7 @@ bool Gear::inside(ofPoint _pos){
 }
 
 bool Gear::touching( Gear *_gear){
-    return distance( *_gear ) <= radius + _gear->radius;
+    return distance( *_gear ) <= radius + data->hcog*2.0 +_gear->radius ;
 }
 
 void Gear::setData( GearData *_data ){
